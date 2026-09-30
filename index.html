@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetha & Sridharan - Wedding</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join us in celebrating the wedding of Sridharan & Sangeetha on December 14, 2025. Getting ARR'ested by the melody of Love!">
+    <meta name="keywords" content="Sridharan, Sangeetha, Wedding, Wedding Invitation, December 2025">
+    
+    <!-- Open Graph Meta Tags for Social Media Preview -->
+    <meta property="og:title" content="Sridharan & Sangeetha - Wedding Invitation">
+    <meta property="og:description" content="Getting ARR'ested by the melody of Love 💜 Join us on December 14, 2025">
+    <meta property="og:image" content="https://www.sangeethasridharan.com/images/preview-thumbnail.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Sridharan & Sangeetha Wedding - Getting ARR'ested by the melody of Love">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sangeethasridharan.com">
+    <meta property="og:site_name" content="Sridharan & Sangeetha Wedding">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sridharan & Sangeetha - Wedding Invitation">
+    <meta name="twitter:description" content="Getting ARR'ested by the melody of Love 💜 Join us on December 14, 2025">
+    <meta name="twitter:image" content="https://www.sangeethasridharan.com/images/preview-thumbnail.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/preview-thumbnail.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="App">
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <!-- Vinyl Record -->
+            <div id="vinylRecord" class="vinyl-record">
+                <div class="vinyl-outer">
+                    <div class="vinyl-grooves"></div>
+                    <div class="vinyl-label">
+                        <div class="vinyl-label-inner">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Notes Animation -->
+            <div class="floating-music-notes">
+                <div class="music-note">🎵</div>
+                <div class="music-note">🎶</div>
+                <div class="music-note">🎼</div>
+                <div class="music-note">🎵</div>
+                <div class="music-note">🎶</div>
+            </div>
+
+            <!-- Couple Names -->
+            <div class="loader-title">
+                <h1>Sridharan & Sangeetha</h1>
+                <p class="loader-tagline">💜 ARR'ested by the melody of Love 💜</p>
+            </div>
+
+            <!-- Play Button -->
+            <button id="playButton" class="play-button">
+                <i class="fas fa-play"></i>
+                <span class="play-text">Play Our Love Story</span>
+            </button>
+
+            <!-- Loading Bar -->
+            <div id="loadingBar" class="loading-bar-container" style="display: none;">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <p class="loading-text">Loading your invitation...</p>
+            </div>
+
+            <!-- Sound Waves -->
+            <div id="soundWaves" class="sound-waves">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Background -->
+    <div id="three-background" class="three-background"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="navigation" id="navigation">
+            <div class="nav-container">
+                <div class="nav-logo">S & S</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#our-story" class="nav-link">Our Story</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Scroll Progress Bar -->
+            <div class="nav-progress-bar">
+                <div class="nav-progress-fill" id="navProgressFill"></div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-sparkle">💜🎵</div>
+                
+                <div class="musical-tagline" data-aos="fade-down" data-aos-duration="1000">
+                    💜 ARR'ested by the melody of Love 💜
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1500">
+                    <span class="name-first">Sridharan</span>
+                    <span class="ampersand">&</span>
+                    <span class="name-second">Sangeetha</span>
+                </h1>
+                
+                <div class="ornament" data-aos="zoom-in" data-aos-delay="300"></div>
+                
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">
+                    Are getting married
+                </p>
+                
+                <div class="hero-date" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fas fa-calendar-heart"></i>
+                    <span>Dec 14th, 2025</span>
+                </div>
+
+                <div class="hero-location" data-aos="fade-up" data-aos-delay="900">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/vvLFE21m4FcGKN5F7" target="_blank" rel="noopener noreferrer">NPR Thirumana Mandapam, Guduvancherry</a>
+                </div>
+                
+                <p class="hero-message" data-aos="fade-up" data-aos-delay="1000">
+                    We're finally hitting 'play' on our forever playlist — come join us as our hearts compose the ultimate duet!
+                </p>
+
+                <div class="countdown" data-aos="zoom-in" data-aos-delay="1100">
+                    <div class="countdown-header">
+                        <div class="vinyl-disc">
+                            <div class="vinyl-center"></div>
+                            <div class="vinyl-lines"></div>
+                        </div>
+                        <h3 class="countdown-title">
+                            Our Love Symphony Begins In
+                        </h3>
+                        <div class="vinyl-disc">
+                            <div class="vinyl-center"></div>
+                            <div class="vinyl-lines"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="countdown-track">
+                        <div class="track-line"></div>
+                        <div class="countdown-wrapper">
+                        <div class="countdown-item">
+                            <div class="time-card">
+                                <div class="card-header">
+                                    <i class="fas fa-calendar-day"></i>
+                                </div>
+                                <div class="time-display">
+                                    <span class="countdown-number" id="days">0</span>
+                                </div>
+                                <div class="time-label">Days</div>
+                                <div class="card-wave"></div>
+                            </div>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <div class="time-card">
+                                <div class="card-header">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="time-display">
+                                    <span class="countdown-number" id="hours">0</span>
+                                </div>
+                                <div class="time-label">Hours</div>
+                                <div class="card-wave"></div>
+                            </div>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <div class="time-card">
+                                <div class="card-header">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+                                <div class="time-display">
+                                    <span class="countdown-number" id="minutes">0</span>
+                                </div>
+                                <div class="time-label">Minutes</div>
+                                <div class="card-wave"></div>
+                            </div>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <div class="time-card">
+                                <div class="card-header">
+                                    <i class="fas fa-stopwatch"></i>
+                                </div>
+                                <div class="time-display">
+                                    <span class="countdown-number" id="seconds">0</span>
+                                </div>
+                                <div class="time-label">Seconds</div>
+                                <div class="card-wave"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="track-line"></div>
+                </div>
+                
+                <div class="countdown-footer">
+                    <div class="music-bars">
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Floating hearts animation -->
+            <div class="floating-hearts">
+                <div class="heart-float" style="left: 15%; animation-delay: 0s; animation-duration: 8s;">💜</div>
+                <div class="heart-float" style="left: 45%; animation-delay: 2s; animation-duration: 10s;">💜</div>
+                <div class="heart-float" style="left: 75%; animation-delay: 4s; animation-duration: 7s;">💜</div>
+                <div class="heart-float" style="left: 88%; animation-delay: 1s; animation-duration: 9s;">💜</div>
+            </div>
+            
+            <!-- Floating musical notes -->
+            <div class="floating-notes">
+                <div class="note-float" style="left: 10%; animation-delay: 0s; animation-duration: 9s;">🎵</div>
+                <div class="note-float" style="left: 60%; animation-delay: 3s; animation-duration: 8s;">🎶</div>
+                <div class="note-float" style="left: 92%; animation-delay: 5s; animation-duration: 10s;">🎼</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">
+                    <i class="fas fa-heart heart-icon"></i>
+                    About Us
+                    <i class="fas fa-heart heart-icon"></i>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up">
+                    Two Souls, One Journey
+                </p>
+                
+                <div class="about-cards">
+                    <div class="profile-card bride-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body">
+                            <h3 class="profile-name">Sangeetha</h3>
+                            <div class="profile-divider"></div>
+                            <p class="profile-role">
+                                <i class="fas fa-code"></i>
+                                Software Developer
+                            </p>
+                            <p class="profile-company">
+                                <i class="fas fa-building"></i>
+                                Zoho Corporation
+                            </p>
+                            <p class="profile-bio">
+                                I'm someone who finds joy in deep conversations, music, long drives, and the simple moments that make life beautiful.
+                                I love travelling, exploring new places, and collecting memories more than things.
+                                Honesty, loyalty, and caring wholeheartedly are values I hold close.
+                                As we begin this journey, I'm excited to grow together and build a life filled with love, laughter, and endless adventures.
+                            </p>
+                            <a 
+                                href="https://www.instagram.com/_sangeetha_c_" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="instagram-btn"
+                            >
+                                <i class="fab fa-instagram"></i>
+                                <span>@_sangeetha_c_</span>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                    </div>
+
+                    <!-- Love Symbol -->
+                    <div class="love-symbol" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="infinity-symbol">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <p class="love-text">Forever Together</p>
+                    </div>
+
+                    <!-- Groom Card -->
+                    <div class="profile-card groom-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-body">
+                            <h3 class="profile-name">Sridharan</h3>
+                            <div class="profile-divider"></div>
+                            <p class="profile-role">
+                                <i class="fas fa-code"></i>
+                                Software Developer
+                            </p>
+                            <p class="profile-company">
+                                <i class="fas fa-building"></i>
+                                Equiniti
+                            </p>
+                            <p class="profile-bio">
+                                I see myself as calm, grounded, and someone who values sincerity in everything I do.
+                                Travelling and discovering new experiences inspire me, and I love sharing those moments with the people I care about.
+                                I believe relationships are built on trust, understanding, and steady support.
+                                With her beside me, I look forward to a future filled with warmth, laughter, and countless journeys together.
+                            </p>
+                            <a 
+                                href="https://www.instagram.com/ig_sritherun" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="instagram-btn"
+                            >
+                                <i class="fab fa-instagram"></i>
+                                <span>@ig_sritherun</span>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="our-story">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">
+                    Our Story
+                </h2>
+                <div class="ornament" data-aos="zoom-in"></div>
+                <p class="section-subtitle" data-aos="fade-up">
+                    We are thrilled to invite you to celebrate our wedding!
+                </p>
+
+                <div class="story-content">
+                    <div class="story-intro" data-aos="fade-up" data-aos-delay="200">
+                        <p>
+                            From an unexpected match to a lifetime commitment — our journey has been filled with beautiful moments, genuine connections, and endless laughter. Join us as we celebrate the next chapter of our love story.
+                        </p>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item left" data-aos="fade-right" data-aos-delay="300">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="timeline-year">The Beginning</div>
+                                <h3>Tamil Matrimony Match</h3>
+                                <p>Our story began with a simple Tamil Matrimony match. Once the profile was accepted, our families connected effortlessly. Around the same time, one of us viewed the other's LinkedIn, leading to the first message — a small beginning that opened the door to something beautiful.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left" data-aos-delay="400">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <div class="timeline-year">Mar 29, 2025</div>
+                                <h3>First Impression 💬</h3>
+                                <p>Our first chat on March 29th felt surprisingly natural. What started as a simple exchange soon grew into long, meaningful conversations on Instagram. Right from the beginning, we felt a comfort that didn't feel new at all.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-aos="fade-right" data-aos-delay="500">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="timeline-year">Apr 18, 2025</div>
+                                <h3>Parents Meet 👨‍👩‍👧</h3>
+                                <p>As our conversations continued to deepen, our parents met for the first time on April 18th. Their meeting went smoothly and happily, reassuring both of us that our story was unfolding in the right direction.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left" data-aos-delay="600">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="timeline-year">May 9, 2025</div>
+                                <h3>First Meet 💫</h3>
+                                <p>We met for the first time on May 9th, a moment filled with ease, warmth, and genuine connection. That day, we both felt a sense of trust and belonging that made everything feel right.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-aos="fade-right" data-aos-delay="700">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="timeline-year">May 13, 2025</div>
+                                <h3>First Call 📞</h3>
+                                <p>Our first phone call on May 13th lasted far longer than expected. It was simple, spontaneous, and full of laughter — the start of a daily routine that quickly became our favorite part of the day.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left" data-aos-delay="800">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-ring"></i>
+                                </div>
+                                <div class="timeline-year">Jun 28, 2025</div>
+                                <h3>The Proposal 💍</h3>
+                                <p>On June 28th, with our bond stronger than ever, the most beautiful question was asked — and the answer was a heartfelt "Yes." A moment we will remember forever. 💜</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-aos="fade-right" data-aos-delay="900">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="timeline-year">Jul 7, 2025</div>
+                                <h3>Pre-Engagement ✨</h3>
+                                <p>We celebrated our pre-engagement on July 7th, surrounded by love, blessings, and happy faces. It marked the beginning of our forever in the presence of the people who matter most.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left" data-aos-delay="1000">
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-infinity"></i>
+                                </div>
+                                <div class="timeline-year">2025 → Forever</div>
+                                <h3>Wedding Journey 🌙</h3>
+                                <p>From a Matrimony match to a LinkedIn glance, from chats to calls, and from friendship to love — our story grew beautifully with timing, trust, and togetherness. Now, with our engagement and wedding ahead, we look forward to stepping into forever, hand in hand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-quote" data-aos="zoom-in" data-aos-delay="800">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="quote-text">
+                            "Love isn't something you find. Love is something that finds you."
+                        </p>
+                        <p class="quote-author">— Our Beautiful Beginning 💜</p>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="events">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">
+                    Wedding Events
+                </h2>
+                <div class="ornament" data-aos="zoom-in"></div>
+                <p class="section-subtitle" data-aos="fade-up">
+                    Join us in celebrating our special days
+                </p>
+
+                <div class="events-timeline">
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="event-icon" style="color: #9b7ec7;">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Engagement</h3>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Dec 13th, 2025</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5:00 PM - 7:00 PM</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="https://maps.app.goo.gl/vvLFE21m4FcGKN5F7" target="_blank" rel="noopener noreferrer" class="location-link">NPR Thirumana Mandapam, Guduvancherry</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-decorator" style="border-color: #9b7ec7;"></div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="event-icon" style="color: #d4af37;">
+                            <i class="fas fa-champagne-glasses"></i>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Reception</h3>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Dec 13th, 2025</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7:00 PM - 10:00 PM</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="https://maps.app.goo.gl/vvLFE21m4FcGKN5F7" target="_blank" rel="noopener noreferrer" class="location-link">NPR Thirumana Mandapam, Guduvancherry</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-decorator" style="border-color: #d4af37;"></div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-icon" style="color: #9b7ec7;">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Wedding</h3>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Dec 14th, 2025</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9:00 AM - 12:00 PM</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="https://maps.app.goo.gl/vvLFE21m4FcGKN5F7" target="_blank" rel="noopener noreferrer" class="location-link">NPR Thirumana Mandapam, Guduvancherry</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-decorator" style="border-color: #9b7ec7;"></div>
+                    </div>
+
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="event-icon" style="color: #d4af37;">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Reception</h3>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Dec 15th, 2025</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6:00 PM - 9:00 PM</span>
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="https://maps.app.goo.gl/Nf6QCusaUe43XNi69" target="_blank" rel="noopener noreferrer" class="location-link">LAYA REGENCY, Mayiladuthurai</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-decorator" style="border-color: #d4af37;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="gallery-container">
+                <h2 class="section-title" data-aos="fade-down">
+                    Our Gallery
+                </h2>
+                <div class="ornament" data-aos="zoom-in"></div>
+                
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <div class="card-wrapper">
+                            <img src="images/card-1.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-2.jpg" alt="Gallery 2">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-3.jpg" alt="Gallery 3">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-4.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-5.jpg" alt="Gallery 5">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-6.jpg" alt="Gallery 6">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-7.jpg" alt="Gallery 7">
+                        </div>
+                        <div class="card-wrapper">
+                            <img src="images/card-8.jpg" alt="Gallery 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="rsvp">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">
+                    <i class="fas fa-envelope-open-text heart-icon"></i>
+                    RSVP
+                    <i class="fas fa-envelope-open-text heart-icon"></i>
+                </h2>
+                <div class="ornament" data-aos="zoom-in"></div>
+                <p class="section-subtitle" data-aos="fade-up">
+                    Please let us know if you'll be joining us!
+                </p>
+
+                <div class="rsvp-content" data-aos="fade-up" data-aos-delay="200">
+                    <form class="rsvp-form" id="rsvpForm">
+                        <!-- Guest Name -->
+                        <div class="form-group">
+                            <label for="guestName">
+                                <i class="fas fa-user"></i>
+                                Your Name
+                            </label>
+                            <input type="text" id="guestName" name="guestName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phoneNumber">
+                                <i class="fas fa-phone"></i>
+                                Phone Number
+                            </label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <!-- Number of Guests -->
+                        <div class="form-group">
+                            <label for="guestCount">
+                                <i class="fas fa-users"></i>
+                                Number of Guests (including yourself)
+                            </label>
+                            <div class="guest-counter">
+                                <button type="button" class="counter-btn minus" onclick="updateGuestCount(-1)">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" id="guestCount" name="guestCount" value="1" min="1" max="10" readonly>
+                                <button type="button" class="counter-btn plus" onclick="updateGuestCount(1)">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Events Selection -->
+                        <div class="form-group events-selection">
+                            <label>
+                                <i class="fas fa-calendar-check"></i>
+                                Which events will you attend?
+                            </label>
+                            <div class="events-checkboxes">
+                                <div class="event-checkbox">
+                                    <input type="checkbox" id="eventEngagement" name="events" value="Engagement">
+                                    <label for="eventEngagement">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="event-info">
+                                            <i class="fas fa-ring"></i>
+                                            <span class="event-name">Engagement</span>
+                                            <span class="event-date">Dec 13, 5:00 PM - Guduvancherry</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="event-checkbox">
+                                    <input type="checkbox" id="eventReception1" name="events" value="Reception Dec 13">
+                                    <label for="eventReception1">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="event-info">
+                                            <i class="fas fa-champagne-glasses"></i>
+                                            <span class="event-name">Reception</span>
+                                            <span class="event-date">Dec 13, 7:00 PM - Guduvancherry</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="event-checkbox">
+                                    <input type="checkbox" id="eventWedding" name="events" value="Wedding">
+                                    <label for="eventWedding">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="event-info">
+                                            <i class="fas fa-heart"></i>
+                                            <span class="event-name">Wedding</span>
+                                            <span class="event-date">Dec 14, 9:00 AM - Guduvancherry</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                
+                                <div class="event-checkbox">
+                                    <input type="checkbox" id="eventReception2" name="events" value="Reception Dec 15">
+                                    <label for="eventReception2">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="event-info">
+                                            <i class="fas fa-glass-cheers"></i>
+                                            <span class="event-name">Reception</span>
+                                            <span class="event-date">Dec 15, 6:00 PM - Mayiladuthurai</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special Message -->
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-dots"></i>
+                                Message for the Couple (Optional)
+                            </label>
+                            <textarea id="message" name="message" placeholder="Share your wishes or any special requirements..." rows="3"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="rsvp-submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send RSVP</span>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="rsvp-success" id="rsvpSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>Your RSVP has been received. We can't wait to celebrate with you! 💜</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo" data-aos="fade-up">
+                        <i class="fas fa-heart"></i>
+                        <h3>Sridharan & Sangeetha</h3>
+                    </div>
+                    
+                    <p class="footer-message" data-aos="fade-up" data-aos-delay="200">
+                        Thank you for being part of our special day. We can't wait to celebrate with you!
+                    </p>
+                    
+                    <p class="footer-date" data-aos="fade-up" data-aos-delay="400">
+                        Dec 14th, 2025
+                    </p>
+                    
+                    <div class="social-profiles" data-aos="fade-up" data-aos-delay="500">
+                        <h4 class="social-title">Follow Our Journey</h4>
+                        <div class="instagram-links">
+                            <a href="https://instagram.com/_sangeetha_c_" target="_blank" class="instagram-card">
+                                <div class="instagram-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="instagram-info">
+                                    <div class="instagram-name">Sangeetha</div>
+                                    <div class="instagram-handle">@_sangeetha_c_</div>
+                                </div>
+                            </a>
+                            
+                            <div class="instagram-divider">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            
+                            <a href="https://instagram.com/ig_sritherun" target="_blank" class="instagram-card">
+                                <div class="instagram-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="instagram-info">
+                                    <div class="instagram-name">Sridharan</div>
+                                    <div class="instagram-handle">@ig_sritherun</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom" data-aos="fade-up" data-aos-delay="600">
+                    <p class="copyright">
+                        © 2025 Sridharan & Sangeetha Wedding. Made with
+                        <i class="fas fa-heart heartbeat"></i> for our special day.
+                    </p>
+                </div>
+
+                <!-- Decorative elements -->
+                <div class="footer-decoration">
+                    <div class="decoration-item">💜</div>
+                    <div class="decoration-item">🎵</div>
+                    <div class="decoration-item">💜</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Audio -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="audio/wedding-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="musicControl" class="music-control" style="display: none;" title="Toggle Music">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
